@@ -41,7 +41,7 @@ I will use one example to illustrate how key-binding can be useful. One scenario
 ]
 ```
 
-From: \url{http://tex.stackexchange.com/questions/140169/sublime-text-snippets-just-for-latex/140222#140222}
+From: <a>http://tex.stackexchange.com/questions/140169/sublime-text-snippets-just-for-latex/140222#140222</a>
 
 ### LaTeX snippets: this is super good
 
