@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Valar Morghulis</title>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2016-05-20T05:02:49+08:00</updated>
+ <id></id>
+ <author>
+   <name>Jiadong Dan</name>
+   <email>jiadong.dan@u.nus.edu</email>
+ </author>
+
+ 
+ <entry>
+   <title>Taming your Sublime Text 3 for LaTeXing</title>
+   <link href="/tutorial/2016/05/20/Sublime%20Text%20LaTeX/"/>
+   <updated>2016-05-20T00:00:00+08:00</updated>
+   <id>/tutorial/2016/05/20/Sublime Text LaTeX</id>
+   <content type="html">&lt;p&gt;Although it is 3:00 AM Singapore time, I still decide to write something because I just lost my sleep. After finishing the workflow article, I want to give more detail about how I integrate Sublime Text 3  and MacTeX as my favorite documentation system.&lt;/p&gt;
+
+&lt;p&gt;Sublime Text 3 is a beast for writing LaTeX code. It provide me customized function for building my work. Some awesome features I frequently used are listed as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Some great packages via package control;&lt;/li&gt;
+    &lt;li&gt;Key-binding features;&lt;/li&gt;
+    &lt;li&gt;Customized LaTeX snippets;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;fantastic-packages-for-latexing&quot;&gt;Fantastic packages for LaTeXing&lt;/h3&gt;
+
+&lt;p&gt;Here I make a list of packages with short discretions to make your typing easy:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://packagecontrol.io/installation&quot;&gt;Packages control&lt;/a&gt;: this is the first package you must have.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/SublimeText/LaTeXTools&quot;&gt;LaTeXtools&lt;/a&gt;: your best friend for LaTeX in Sublime Text.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/LaTeXing/LaTeX-cwl&quot;&gt;LaTeX-cwl&lt;/a&gt;: for the autocompletion of LaTeX commands.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;CSV/Excel to LaTeX Table&quot;&gt;LaTeXTab&lt;/a&gt;: greater helper for CSV/Excel to LaTeX Table&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Technically speaking, with these for packages, I will get a quick workflow on write your own documents. Actually, I always use some academic tables in your notes or reports. I modified LaTeXTab packages a little bit for better indentation and academic use.&lt;/p&gt;
+
+&lt;h3 id=&quot;key-binding-to-boost-your-productivity&quot;&gt;Key-binding to boost your productivity&lt;/h3&gt;
+
+&lt;p&gt;I will use one example to illustrate how key-binding can be useful. One scenario for users is that I use subscripts and superscripts a lot. Every time in the math mode, I want a auto-completion function of &lt;code&gt;{}&lt;/code&gt; when typing &lt;code&gt;_&lt;/code&gt; or &lt;code&gt;^&lt;/code&gt;. Then I use the following code to build the key-binding:&lt;/p&gt;
+
+&lt;p&gt;From: http://tex.stackexchange.com/questions/140169/sublime-text-snippets-just-for-latex/140222#140222&lt;/p&gt;
+
+&lt;h3 id=&quot;latex-snippets-this-is-super-good&quot;&gt;LaTeX snippets: this is super good&lt;/h3&gt;
+
+&lt;p&gt;Accumulated snippets for you code according to your personal habits will become a great treasure for you. The more snippets you write, the faster for you to write. My snippets will be divided into:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Element snippets: a collection of complex formulas functions;&lt;/li&gt;
+    &lt;li&gt;Structure snippets: comments, customized figure and table, templates snippets;&lt;/li&gt;
+    &lt;li&gt;Auxiliary snippets: helping sheet snippet when forgetting something syntax and notation;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are a lot of features I still need time add expand my list in this article.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bootstrap grid system</title>
+   <link href="/bootstrap/2016/05/14/Bootstrap%20grid%20system/"/>
+   <updated>2016-05-14T00:00:00+08:00</updated>
+   <id>/bootstrap/2016/05/14/Bootstrap grid system</id>
+   <content type="html">&lt;p&gt;I only listed important points in the grid system:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the range of screen size;&lt;/li&gt;
+  &lt;li&gt;break points;&lt;/li&gt;
+  &lt;li&gt;container, row, and col;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;classification-of-the-screen-size&quot;&gt;Classification of the screen size&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;extra small screen (&amp;lt;768 px)&lt;/li&gt;
+  &lt;li&gt;small screen (768 px &amp;lt; w &amp;lt; 992 px)&lt;/li&gt;
+  &lt;li&gt;medium screen (992 px &amp;lt; w &amp;lt; 1200 px)&lt;/li&gt;
+  &lt;li&gt;large screen (&amp;gt; 1200 px)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;break-points&quot;&gt;Break points&lt;/h3&gt;
+
+&lt;p&gt;Important break points usually happens the critical points of screen size.
+Break points work from smallest break points first to large&lt;/p&gt;
+
+&lt;h3 id=&quot;col&quot;&gt;Col&lt;/h3&gt;
+
+&lt;p&gt;12 col grid system is used in Bootstrap. we have the following predefined class.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;col-(xs, sm, md , lg)-#&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;xs - extra small&lt;/li&gt;
+    &lt;li&gt;sm - small&lt;/li&gt;
+    &lt;li&gt;md - medium&lt;/li&gt;
+    &lt;li&gt;lg - large&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;#&lt;/code&gt; any number from 1 to 12&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;we set the medium screen col in this example, when the screen size is shrink to small or extra small, all the horizontal col will stack with each other;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We set both lg and xs col, let’s think from small to large:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;extra small: take the xs col setting;&lt;/li&gt;
+  &lt;li&gt;small: still take the xs col setting;&lt;/li&gt;
+  &lt;li&gt;medium: still take the xs col setting;&lt;/li&gt;
+  &lt;li&gt;large: lg col will be applied under large screen;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We can see that the grid system is the basis for responsive design in Bootstrap.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>My ideas on workflow of sustainable research</title>
+   <link href="/research/2015/11/08/Working%20flow/"/>
+   <updated>2015-11-08T00:00:00+08:00</updated>
+   <id>/research/2015/11/08/Working flow</id>
+   <content type="html">&lt;div class=&quot;summary&quot;&gt;
+&lt;div class=&quot;summaryHeader&quot;&gt;Summary&lt;/div&gt;
+&lt;div class=&quot;summaryBody&quot;&gt;
+Workflow of research can greatly improve by a good typesetting tool (LaTeX), a programming language (Python), a communication and sharing platform (website). Don&#39;t forget to refine everything accordingly.
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Research workfow is very important issue on how to conduct effective research. &lt;a href=&quot;http://www.pgbovine.net&quot;&gt;Prof. Philip Guo&lt;/a&gt; in University of Rochester talked the workflow for data scientist or for those who working in computer science. As budding researcher in materials science, the concept of workflow is equally important whether you are aimed at the academia or the industry. My ideas of workflow in experiment based research is basically an reflection on the interaction of individual habit and efficient professionism.&lt;/p&gt;
+
+&lt;p&gt;Specifically, I’d like to divide all these workflow stuff into three parts.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Find and match&lt;/li&gt;
+  &lt;li&gt;Individualization&lt;/li&gt;
+  &lt;li&gt;Refinement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;finding-the-appropriate-tools-for-you-to-start&quot;&gt;Finding the appropriate tools for you to start&lt;/h3&gt;
+
+&lt;p&gt;This is the initial stage, my experience is that you should choose the best &lt;strong&gt;tools&lt;/strong&gt; based on your knowledge and research field. The first step in this phase is analyzing what are you going to work in your field of research. Technically, I’d like to classify my work into &lt;code&gt;experiment&lt;/code&gt;, &lt;code&gt;analysis&lt;/code&gt;, &lt;code&gt;presentation&lt;/code&gt;. Actually, we further divide this three parts into more detailed parts. For example, analysis includes the data interpretation and data presentation, etc. No matter what is the criterion to classify all these thing, I personally think there is one thing which is very basic and it connects all these part together. His name is called &lt;strong&gt;&lt;em&gt;recoding&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is a broad topic, generally speaking, it includes record of your paper review, experiment data, life reflection, technical article, notes and tutorials, CV, etc. Good recoding can keep your research flow in a sensible logic and seamless way. In order to achieve the goal of good recoding, I personally choose the following tools.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;You need to a academic and professional documentation preparation system.&lt;/li&gt;
+    &lt;li&gt;You need to master a certain programming language.&lt;/li&gt;
+    &lt;li&gt;You need a platform to share to ideas.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The most recommended typesetting system is &lt;a href=&quot;https://www.latex-project.org&quot;&gt;LaTeX&lt;/a&gt;. I have tried many other similar projects (lke Markdown), no one has the power as that of LaTex. Markdown is simple and easy to learn, which sacrificed the professionism and flexible customization. It will drive you crazy when you need something special although it is indeed a good tools for simple note-taking. How to tame LaTeX into your pet will be introduced in the second part of this article.&lt;/p&gt;
+
+&lt;p&gt;When talking about programming, some students would have thought it is daunting and meaningless to master certain programming language, especially considering we research students are burdened with research tasks. But, I want to argue is that it is NOT an excuse to give up such a useful tools. Current research work is deeply involved with interaction with computer, so with an aid with certain programming language, you can greatly improve your efficiency. Just leave some tedious repeated work to the computer, take more time to research and life. The language here I recommended is &lt;a href=&quot;https://www.python.org&quot;&gt;Python&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The last but not the least, we need a platform to communicate and share what we have learned. Probably as a future bee in academia, I think personal website dose no bad in this aspect. I found tons of interesting people through their web, I learn from them even though we never met in real life. Besides this, this could serve as a storage of you ideas and thought, you supervisor can visited this site, then he or she will know your recent situation without emailing you if there is actually no need.&lt;/p&gt;
+
+&lt;h3 id=&quot;individualizing-and-customizing-your-stuff&quot;&gt;Individualizing and customizing your stuff&lt;/h3&gt;
+
+&lt;p&gt;Now, you are ready to the special one with all of these tools. Let’s first start with LaTeX. Normally, one word can really summarized in this part: &lt;strong&gt;templates, templates, and templates!&lt;/strong&gt;. Please construct and refine templates for:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Literature review;&lt;/li&gt;
+    &lt;li&gt;Research report;&lt;/li&gt;
+    &lt;li&gt;Lecture notes;&lt;/li&gt;
+    &lt;li&gt;Beamer presentation;&lt;/li&gt;
+    &lt;li&gt;Assignment;&lt;/li&gt;
+    &lt;li&gt;CV;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I won’t talk too much about Python now. Here I only listed what I could do with great libraries of Python.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Numeric and Scientific work  with packages (here is the &lt;a href=&quot;https://wiki.python.org/moin/NumericAndScientific&quot;&gt;list&lt;/a&gt;);&lt;/li&gt;
+    &lt;li&gt;Quick note-taking with &lt;a href=&quot;http://jupyter.org&quot;&gt;Ipython notebook&lt;/a&gt;;&lt;/li&gt;
+    &lt;li&gt;[Future] There are some great DFT code using Python and it’s free;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Finally, the personal website set-up can be somewhat technical for non-CS student. You may required to have a little bit knowledge about &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;css&lt;/code&gt;, &lt;code&gt;JavaScript&lt;/code&gt; if you really want to customize you website. Without much deviating from our original purpose, choosing a matured platform (like &lt;a href=&quot;https://wordpress.org&quot;&gt;Wordpress&lt;/a&gt;) would be better. I personally choose &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt;+ &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; for taste and individual purpose. If you have it set up, then &lt;strong&gt;&lt;em&gt;write and behave professionally&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I know I omit some details, but main idea is stated in summary box.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sample post</title>
+   <link href="/tutorial/2015/11/02/sample%20posts/"/>
+   <updated>2015-11-02T00:00:00+08:00</updated>
+   <id>/tutorial/2015/11/02/sample posts</id>
+   <content type="html">&lt;p&gt;Articles in this sites focus on texts, photos. Tables, flow charts, if complexed topography is needed, LaTeX is preferred.&lt;/p&gt;
+
+&lt;div class=&quot;summary&quot;&gt;
+&lt;div class=&quot;summaryHeader&quot;&gt;Summary&lt;/div&gt;
+&lt;div class=&quot;summaryBody&quot;&gt;
+Summary Content
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;/h4&gt;
+
+&lt;p&gt;This is normal text.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is bold italic text&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;this is ttfamily text&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 2&lt;/li&gt;
+  &lt;li&gt;item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;add a photo
+&lt;img src=&quot;http://i.imgur.com/4ojz1sG.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Jekyll Set-up on Mac</title>
+   <link href="/tutorial/2015/09/26/Jekyll-setup/"/>
+   <updated>2015-09-26T00:00:00+08:00</updated>
+   <id>/tutorial/2015/09/26/Jekyll-setup</id>
+   <content type="html">&lt;p&gt;I spent nearly week to set up my own website based on Jekyll and github 
+pages. In this process, I gained a general idea of the structure of  website set-up. This is a really interesting. I once considered writing my own website based on some commercialized templates. But the low degree of customization forced me to give up the “relying on other person” idea. Thanks to github and Jekyll, all this came true!&lt;/p&gt;
+
+&lt;h2 id=&quot;fork-or-create&quot;&gt;Fork or Create&lt;/h2&gt;
+
+&lt;p&gt;You could choose to fork, but I would like to create a new repo.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;following &lt;a href=&quot;https://pages.github.com&quot;&gt;instructions&lt;/a&gt; in github to create your repo;&lt;/li&gt;
+  &lt;li&gt;Save your repo into Github Desktop&lt;/li&gt;
+  &lt;li&gt;commit and sync to post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-structure-of-jekyll&quot;&gt;The structure of Jekyll&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt;: configuration of you pages;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;_layout&lt;/code&gt;: folders for you templates;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;_includes&lt;/code&gt;: small pieces of html which can be included into other files via &lt;strong&gt;liquid tag&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;_posts&lt;/code&gt;: where you posts should lie in;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;css, js&lt;/code&gt;: style sheet and how your web behave;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;set-up-the-local-jekyll-environment&quot;&gt;Set up the local Jekyll environment&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;install Xcode, the newest version;&lt;/li&gt;
+    &lt;li&gt;install Xcode developer command lines; Open your terminal, type: xcode-select –install&lt;/li&gt;
+    &lt;li&gt;Install the github-pages; gem install github-pages&lt;/li&gt;
+    &lt;li&gt;Install bundler; gem install bundler&lt;/li&gt;
+    &lt;li&gt;change directory to your local github repository; bundle install
+Here, some bundle has been installed in installing github-pages, only a few of them will be updated according to you Gemfile in your repository;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;you-are-free-to-website-now&quot;&gt;You are free to website now&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;jekyll serve --watch --baseurl &quot;&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Life in SDU (09/2011-06/2015)</title>
+   <link href="/life/summary/2015/07/02/Life%20in%20SDU/"/>
+   <updated>2015-07-02T00:00:00+08:00</updated>
+   <id>/life/summary/2015/07/02/Life in SDU</id>
+   <content type="html">&lt;p&gt;Life in Shandong University&lt;/p&gt;
+
+&lt;p&gt;After the graduation ceremony, I left the city that I lived during my college life. Like the summary I made after leaving NCKU, I do think there is need to make short summary about life in Shandong University. Reflection on the past life from now, there is always something I haven’t down yet. I’d like to summarized in the aspects of study, friends, future.&lt;/p&gt;
+
+&lt;h3 id=&quot;academic-life&quot;&gt;Academic life&lt;/h3&gt;
+
+&lt;h4 id=&quot;year-one&quot;&gt;Year one&lt;/h4&gt;
+
+&lt;p&gt;This is an exciting year,  I made a lot of so-called achievements: First-Class scholarship, Excellent Student of Shandong University, Core member of the class committee. It seems that this was a wonderful year, I have reached what other peer student want to achieve. I make things perfect as far as I can. In the eyes of other, I should be happy, and satisfied with all these honors and awards. But the reality is not. I could get A in my courses, but I am still confused what I truly love and feel passionate for. One word to describe freshman life is &lt;strong&gt;&lt;em&gt;confusion&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;year-two&quot;&gt;Year two&lt;/h4&gt;
+
+&lt;p&gt;I am seeking change, I am preparing something for going out. This is the stage I truly think about what I like to do in the future. My short-term goal at that time is going out to be an exchange student. Switching an environment might be a booster for me. I put less emphasis on study, I do some side projects involved in Matlab and C, trying exploring something which can be combined with materials science to make it more interesting and concrete. The project had no end result, but it has seeded in my heart. One word in year two is &lt;strong&gt;&lt;em&gt;exploration&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;year-three&quot;&gt;Year three&lt;/h4&gt;
+
+&lt;p&gt;I finally got out! This is golden year of me in every aspects. I had the very freedom to choose whatever I’d like to learn. I gradually transformed from Chinese-based study mode to an English one. My self-learning ability increased exponentially which surprised myself. I even didn’t care about any score, I just enjoy the process of learning and discussion. This kind of feeling is great for me. This half year is the milestone.&lt;/p&gt;
+
+&lt;h4 id=&quot;year-four&quot;&gt;Year four&lt;/h4&gt;
+
+&lt;p&gt;Application and final year project are two themes during this year. At the same time, I picked up the old side projects in year two and combined it wit my FYP. I gained a general overview of interdisciplinary research and decided to fight for it. And luckily I wad admitted by NGS, which could really provide me the platform. This could count as the final fruit.&lt;/p&gt;
+
+&lt;h3 id=&quot;friends&quot;&gt;Friends&lt;/h3&gt;
+
+&lt;p&gt;My friends really inspired me in every works of life and research. In Shandong University, Xiaoshi and Wei really helped me a lot. You guys took me out from my depression and always gave me courage and hope. Gratitude also are delivered Tiange, Ziwei and Mike, we were always eating and talking on funny things of ourself and others. You guys are laughter maker. In NCKU, Chao is just like a mentor, you still could inspired me even when we went back to our original school. Without your help, I won’t be in NUS. Hao-Chun, talking and discussing with you is pleasant thing, I appreciate your attitude to life, your personality really have a good influence on me. Thank you, mates! You guys are shaping my mind.&lt;/p&gt;
+
+&lt;h3 id=&quot;future&quot;&gt;Future&lt;/h3&gt;
+
+&lt;p&gt;A few words about future:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;having a clear goal;&lt;/li&gt;
+    &lt;li&gt;working with passion;&lt;/li&gt;
+    &lt;li&gt;learning with heart;&lt;/li&gt;
+    &lt;li&gt;making good friends;&lt;/li&gt;
+    &lt;li&gt;reflection –&amp;gt; refine –&amp;gt; implement&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Life in Tainan（2013/09-2014/02）</title>
+   <link href="/life/2014/01/28/Life%20in%20Tainan/"/>
+   <updated>2014-01-28T00:00:00+08:00</updated>
+   <id>/life/2014/01/28/Life in Tainan</id>
+   <content type="html">&lt;p&gt;再见， 台南！&lt;/p&gt;
+
+&lt;p&gt;在成大的半年时光如梭， 坐上飞机回国时候，在机场差点弄掉朋友装有礼物卡的袋子（当时并不知道里面有礼物卡）。如果不是好心大叔的帮助，也许我很难看到上面朋友的祝福。在机场的候车厅，望着礼物卡，居然会落泪，想想这半年时光收获的，不仅仅是学业的进步，更是结交了很好的朋友，老师。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;最好的时光给你了你&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;成大，
+最好的时光给了你！
+你给我插上新的翅膀，
+你点燃了我的希望， 
+你让我无忧无虑地飞翔！
+最大的收获，
+是眼界，
+是性情，
+是梦想！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;最美的年华遇到你们&lt;/h3&gt;
+
+&lt;p&gt;在中秋BBQ上，认识了居士和Tang Songyuan。 相似的经历，差不多一样的抱负，大家都很厉害，让我一下觉得自己当初的选择是正确的。在半年的生活学习中，居士的确给了我很大的帮助，他的坚韧和吃苦耐劳的精神，他的积极乐观，他的有条有理都是无时无刻地影响了我。喜欢禅修的他，让我去思考生活质朴的一方面，在交换生中，最大的收获就是居士了。Tang十分努力认真，间接也给了我很多的鼓励，我也十分感谢他。&lt;/p&gt;
+
+&lt;p&gt;还有Hao-Chun， 立涵，有仁等一些台湾小伙伴。忘不了大半夜一起去观星，忘不了的出租屋内一起煎牛排，也忘不了在快餐店讨论问题的热情。来成大之前，并没有预料到会结交很多本地朋友，最后的结果也是出乎意料。 我想我时幸运的，因为在彼此的交流中，我感受到了是一颗颗真诚的心，让我明白，要想获得别人的信任和友情，我们自己也不能吝啬给予自己的感情。&lt;/p&gt;
+
+&lt;p&gt;也很感谢HQX，LXJ，YZX，QJW，奶爸， 一起去耍，一起去吃，一起发笑。我想幸亏没有独自一人选择清大，不然可能并不那么快乐。感谢一路你们的陪伴！&lt;/p&gt;
+
+&lt;p&gt;还要感谢实验的学长姐，Prof. Hon 和 Prof. Liu。 在Prof. Hon的陶瓷课上，感受到了老师的博学，也感受到了老师的幽默。有幸参加了老师的荣退演讲，从中感受到了教书并育人的强大荣誉感，将令我受益终生。Prof. Liu的课堂则显得更佳美国化，总是善于启发学生，引导学生，在他的课堂的，我觉得学到的不仅是书本上的知识，更是如何去做一名主动，积极，善于思考的学生。在和老师的交流中，我感受到了一名教育者，一名启发者的光芒。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;最后还是要说再见&lt;/h3&gt;
+
+&lt;p&gt;最后还是要说再见，内心既有忧伤，有充满希望！相信，未来，还会重逢！&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+
+</feed>

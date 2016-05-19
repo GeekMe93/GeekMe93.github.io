@@ -1,0 +1,63 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Contact</p>
+      Block E2 05-01 <br>
+      Faculty of Engineering <br>
+      9 Engineering Drive 1 <br>
+      Singapore 117575 <br>
+      <br>
+      <a href="https://twitter.com/930511">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+      <a href="https://github.com/GeekMe93">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+      <a href="https://linkedin.com/">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+      <a href="https://zhihu.com/">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-stack-1x fa-inverse">知</i>
+          </span>
+      </a>
+                  
+  </div>
+</div>
