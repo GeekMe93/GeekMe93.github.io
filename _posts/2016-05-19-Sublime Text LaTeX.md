@@ -28,8 +28,20 @@ Technically speaking, with these for packages, I will get a quick workflow on wr
 
 I will use one example to illustrate how key-binding can be useful. One scenario for users is that I use subscripts and superscripts a lot. Every time in the math mode, I want a auto-completion function of `{}` when typing `_` or `^`. Then I use the following code to build the key-binding:
 
+```
+[
+    { "keys": ["_"], "command": "insert_snippet", "args": {"contents": "_{$1}$0"},                          
+    "context":  
+        [
+            { "key": "selector", "operator": "equal", "operand": "text.tex.latex string.other.math"},
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
+        ]
+    }
+]
+```
 
-From: http://tex.stackexchange.com/questions/140169/sublime-text-snippets-just-for-latex/140222#140222
+From: \url{http://tex.stackexchange.com/questions/140169/sublime-text-snippets-just-for-latex/140222#140222}
 
 ### LaTeX snippets: this is super good
 
