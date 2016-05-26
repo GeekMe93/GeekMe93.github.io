@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Layout -- Styles for managing the structural hierarchy of the site.
+   ========================================================================== */
+
+/*
+   Body reset
+   ========================================================================== */
+// border-box for all browser
+* {
+  padding:0;margin: 0;border:none;outline:none; 
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+// reset browser default magin and padding
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Prevent scroll on narrow devices */
+}
+
+html {
+  font-family: $base-font;
+  font-size: $doc-font-size;
+  line-height: $doc-line-height;
+  @media (min-width: $large-breakpoint) {
+    font-size: $large-font-size;
+  }
+}
+
+body {
+  color: $textcolor;
+  background-color: $bodycolor;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+
+/*
+   Wrap
+   ========================================================================== */
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+
+/*
+   Container
+   ========================================================================== */
+.container {
+  max-width: 38rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+}
+
+/*
+   Masthead 
+   -- Super small header above the content for site name and short description.
+   ========================================================================== */
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+.masthead-title a {
+  color: $titlecolor;
+}
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  color: $gray-4;
+  letter-spacing: 0;
+}
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
+/*
+   Pagination
+   Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+   there are no more previous or next posts to show.
+   ========================================================================== */
+
+.pagination {
+  overflow: hidden; // clearfix
+  margin: 0 -1.5rem 1rem;
+  color: $gray-2;
+  text-align: center;
+}
+
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: solid #eee;
+  border-width: 1px 0;
+
+  &:first-child {
+    margin-bottom: -1px;
+  }
+}
+
+// Only provide a hover state for linked pagination items
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+
+  .pagination-item {
+    float: left;
+    width: 50%;
+    border-width: 1px;
+
+    &:first-child {
+      margin-bottom: 0;
+      border-top-left-radius:    4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:last-child {
+      margin-left: -1px;
+      border-top-right-radius:    4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+/*
+   Posts and pages
+   Each post is wrapped in `.post` and is used on default and post layouts.
+   Each page is wrapped in `.page` and is only used on the page layout.
+   ========================================================================== */
+
+.listing-item,.listing-seperator{list-style-type:none;}
+.listing-item a{padding:.2em 1em;}
+.listing-item time{color:$gray-3;}
+.listing-seperator{font-weight:bold;}
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: $titlecolor;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// Meta data line below post title
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: darken($gray-2, 10);
+}
+
+
+// Related posts
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  li {
+    small {
+      font-size: 75%;
+      color: #999;
+    }
+
+    a:hover {
+      color: #268bd2;
+      text-decoration: none;
+
+      small {
+        color: inherit;
+      }
+    }
+  }
+}
+
+
